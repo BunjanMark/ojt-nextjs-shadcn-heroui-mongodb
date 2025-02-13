@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import NavbarComponent from "@/components/navigation/navbar/navbar";
-import { connectToMongoDB } from "@/lib/db";
+// import { connectToMongoDB } from "@/lib/db";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,7 +24,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  connectToMongoDB();
+  // connectToMongoDB();
   return (
     <html lang="en" suppressHydrationWarning>
       <body

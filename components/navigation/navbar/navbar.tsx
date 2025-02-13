@@ -33,7 +33,10 @@ const NavbarComponent = () => {
         />
         <NavbarBrand>
           <MarkLogo />
-          <p className="font-bold text-inherit">MARK</p>
+
+          <Link aria-current="page" href="/">
+            <p className="font-bold text-inherit">MARK</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
